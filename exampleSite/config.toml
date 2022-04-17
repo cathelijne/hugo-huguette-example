@@ -1,0 +1,10 @@
+#baseURL = '/'
+#languageCode = 'en-us'
+#title = 'Hugo and Netlify CMS. A Boilerplate'
+#copyright = "Copyright 2022"
+
+disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+theme = "hugo-classless-netlifycms"
+[params]
+  netlifycms = true
+  css = true

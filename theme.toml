@@ -1,0 +1,13 @@
+name        = "Huguette"
+license     = "MIT"
+licenselink = ""
+description = "A very minimal theme for Hugo with options for classless.css and NetlifyCMS"
+homepage    = ""
+demosite    = ""
+tags        = ["clean", "minimal", "simple", "classlesscss", "netlifycms"]
+features    = ["classlesscss", "NetlifyCMS", "lightweight"]
+
+[author]
+  name      = "Cathelijne Hornstra"
+  homepage  = ""
+  

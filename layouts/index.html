@@ -1,0 +1,10 @@
+
+{{define "main"}}
+<!--Title-->
+<h1>{{.Title}}</h1>
+{{- partial "subtitle.html" . -}}
+{{- partial "introduction.html" . -}}
+<!--Content-->
+{{.Content}}
+{{- partial "last5.html" . -}}
+{{end}}

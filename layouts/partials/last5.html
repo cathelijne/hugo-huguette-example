@@ -1,0 +1,7 @@
+
+<div>
+<h2>The last 5 articles</h2>
+{{range last 5 (where .Site.RegularPages.ByTitle "Section" "a" )}}
+<h4><a href="{{.RelPermalink}}">{{- .Title -}}</a></h4>
+{{ end }}  
+</div>

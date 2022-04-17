@@ -1,0 +1,16 @@
+
+<!-- Create a menu from the "Fixed Pages" and "Menu Pages" sections in Netlify CMS -->
+<nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/a">Articles</a></li>
+    <li>|</li>
+    {{range (where .Site.RegularPages.ByTitle "Section" "p" )}}
+    <li><a href="{{.RelPermalink}}">{{- .Title -}}</a></li>
+    {{end}}
+    <li>|</li>
+    {{range (where .Site.RegularPages.ByTitle "Section" "" )}}
+    <li><a href="{{.RelPermalink}}">{{- .Title -}}</a></li>
+    {{end}}
+  </ul>
+</nav>

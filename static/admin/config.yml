@@ -1,0 +1,59 @@
+backend:
+  name: git-gateway
+  branch: dev # Branch to update (optional; defaults to master)
+site_url: https://huguette.netlify.app/
+local_backend: true
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: 'fixed'
+    label: 'Fixed'
+    description: 'These are fixed pages. You can edit them, but not delete them'
+    delete: false
+    files:
+    - file: "content/_index.md"
+      label: "Home"
+      name: "home"
+      fields:
+      - { label: "Date", name: "date", widget: "hidden"}
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Subtitle', name: 'subtitle', widget: 'string'}
+      - { label: 'Header Image', name: 'header', widget: 'image'}
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+
+    - file: "content/about.md"
+      label: "About"
+      name: "about"
+      fields:
+      - { label: "Date", name: "date", widget: "hidden"}
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Subtitle', name: 'subtitle', widget: 'string'}
+      - { label: 'Header Image', name: 'header', widget: 'image', required: false, hint: "optional header image"}
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: 'menupages'
+    label: 'Menu Page'
+    description: 'These pages will end up in the menu'
+    folder: 'content/p'
+    create: true
+    slug: '{{slug}}'
+    fields:
+    - { label: "Date", name: "date", widget: "hidden"}
+    - { label: 'Title', name: 'title', widget: 'string' }
+    - { label: 'Introduction', name: 'introduction', widget: 'text'}
+    - { label: 'Header Image', name: 'header', widget: 'image', required: false, hint: "optional header image"}
+    - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: 'articles'
+    label: "Article"
+    folder: 'content/a'
+    create: true
+    slug: '{{slug}}'
+    fields:
+    - { label: "Date", name: "date", widget: "datetime"}
+    - { label: 'Title', name: 'title', widget: 'string' }
+    - { label: 'Subitle', name: 'subtitle', widget: 'string', required: false }
+    - { label: 'Introduction', name: 'introduction', widget: 'markdown', required: false}
+    - { label: 'Body', name: 'body', widget: 'markdown' }

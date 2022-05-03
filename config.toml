@@ -1,6 +1,6 @@
 baseURL = '/'
 languageCode = 'en-us'
-title = 'Huguette - A theme for Hugo"
+title = 'Huguette - A theme for Hugo'
 copyright = "Copyright © :CURRENTYEAR: Cathelijne Hornstra"
 enableGitInfo = "true"
 

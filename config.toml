@@ -4,7 +4,7 @@ title = 'Huguette - A theme for Hugo'
 copyright = "Copyright © :CURRENTYEAR: Cathelijne Hornstra"
 enableGitInfo = "true"
 
-theme = "hugo-theme-huguette"
+theme = "huguette"
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 [params]
   netlifycms = true

@@ -1,10 +1,10 @@
 baseURL = '/'
 languageCode = 'en-us'
-title = 'Hugo and Netlify CMS. A Boilerplate'
+title = 'Huguette - A theme for Hugo"
 copyright = "Copyright © :CURRENTYEAR: Cathelijne Hornstra"
 enableGitInfo = "true"
 
-theme = "hugo-classless-netlifycms"
+theme = "hugo-theme-huguette"
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 [params]
   netlifycms = true

@@ -1,0 +1,3 @@
+[submodule "themes/huguette"]
+	path = themes/huguette
+	url = https://github.com/cathelijne/hugo-theme-huguette.git

@@ -1,11 +1,8 @@
 backend:
   name: git-gateway
-  branch: main # Branch to update (optional; defaults to master)
-  squash_merges: true
-  local backend: true
-site_url: https://hugo-netlifycms-boilerplate.netlify.app/
-
-publish_mode: editorial_workflow
+  branch: dev # Branch to update (optional; defaults to master)
+site_url: https://huguette.netlify.app/
+local_backend: true
 
 media_folder: static/img
 public_folder: /img

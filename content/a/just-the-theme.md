@@ -27,7 +27,8 @@ mkdir static
 cp -r themes/huguette/static/css static
 ```
 Enable the css in your config.toml:
+```
 echo '[params]
   css = true' >> config.toml
-
+```
 And that's it!

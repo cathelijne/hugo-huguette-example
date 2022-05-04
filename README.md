@@ -1,9 +1,10 @@
 [![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/cathelijne/hugo-huguette-example&stack=cms)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7aea6bf2-3c5e-4db3-91cf-09e6a476fbf8/deploy-status)](https://app.netlify.com/sites/huguette/deploys)
 
 # One-click Netlify install of Hugo, with the Huguette theme and Netlify CMS
 This is the code for a full static Hugo website install on Netlify, with the [Huguette theme for Hugo](https://github.com/cathelijne/hugo-theme-huguette/).
 
-![Huguette theme thumbnail](https://github.com/cathelijne/hugo-theme-huguette/blob/main/images/tn.png?raw=true)
+![Huguette theme thumbnail](https://github.com/cathelijne/hugo-theme-huguette/blob/main/images/screenshot.png?raw=true)
 
 ## See it in action
 Here's an [example site](https://huguette.netlify.app/) to see what Huguette looks like.
@@ -13,6 +14,7 @@ Here's an [example site](https://huguette.netlify.app/) to see what Huguette loo
 I also wanted to include the CMS. _I_ might be comfortable enough to write Markdown, but not everyone I build sites for is, and to wean them off of their php-mysql-driven CMS's, something WYSIWYG-like was needed. And so I decided to split the theme into a theme-only repository and this full site-one (that includes the theme as a git submodule of course).
 
 ## Installation
+[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/cathelijne/hugo-huguette-example&stack=cms)
 Just click the button. Seriously. It's that easy. Or click [here](https://app.netlify.com/start/deploy?repository=https://github.com/cathelijne/hugo-huguette-example&stack=cms)
 
 After clicking the button, authenticate with GitHub or GitLab and choose a repository name. Netlify then automatically creates a clone of the repository in your GitHub or GitLab account. Next, it builds and deploys the new site on Netlify, bringing you to the site dashboard after completing the build.
